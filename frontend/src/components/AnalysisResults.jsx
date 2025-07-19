@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown'
+
 const AnalysisResults = ({ data, onReset }) => {
   const { analysis, ai_feedback } = data
 
@@ -99,9 +101,7 @@ const AnalysisResults = ({ data, onReset }) => {
           <h3>🤖 AI Feedback</h3>
           <div className="ai-feedback">
             <div className="feedback-content">
-              {ai_feedback.general_feedback.split('\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+              <ReactMarkdown>{ai_feedback.general_feedback}</ReactMarkdown>
             </div>
             
             {ai_feedback.suggested_rewrites && ai_feedback.suggested_rewrites.length > 0 && (
