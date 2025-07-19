@@ -4,6 +4,8 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .app-header {
@@ -24,8 +26,11 @@
 }
 
 .app-main {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Upload Section */
@@ -35,6 +40,8 @@
   padding: 40px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Resume Upload Component */
@@ -201,6 +208,8 @@
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .results-header {
@@ -432,6 +441,7 @@
 @media (max-width: 768px) {
   .App {
     padding: 10px;
+    width: 100%;
   }
   
   .app-header h1 {
@@ -441,6 +451,8 @@
   .upload-section,
   .analysis-results {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .results-header {
