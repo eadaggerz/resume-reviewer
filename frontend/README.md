@@ -29,7 +29,22 @@ A modern React application for AI-powered resume analysis and feedback.
 
 ## Backend Integration
 
-Make sure your FastAPI backend is running on `http://127.0.0.1:8000` before using the frontend.
+Make sure your FastAPI backend is running before using the frontend.
+
+### API Configuration
+
+The frontend is configured to connect to the backend API. You can customize the API URL by setting the `VITE_API_BASE_URL` environment variable:
+
+```bash
+# Create a .env file in the frontend directory
+VITE_API_BASE_URL=http://127.0.0.1:8000
+```
+
+**Default configuration:**
+- Development: `http://127.0.0.1:8000`
+- Production: Set `VITE_API_BASE_URL` to your production API URL
+
+The configuration is managed in `src/config.js` and supports environment variable overrides.
 
 ## Build for Production
 

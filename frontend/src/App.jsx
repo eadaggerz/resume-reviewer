@@ -3,6 +3,7 @@ import './App.css'
 import ResumeUpload from './components/ResumeUpload'
 import JobDescriptionForm from './components/JobDescriptionForm'
 import AnalysisResults from './components/AnalysisResults'
+import { getApiUrl, API_CONFIG } from './config'
 
 function App() {
   const [analysisData, setAnalysisData] = useState(null)
@@ -14,7 +15,7 @@ function App() {
     setError(null)
     
     try {
-      const response = await fetch('http://127.0.0.1:8000/analyze-resume/', {
+      const response = await fetch(getApiUrl(API_CONFIG.ENDPOINTS.ANALYZE_RESUME), {
         method: 'POST',
         body: formData,
       })
