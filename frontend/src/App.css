@@ -1,7 +1,7 @@
 /* Main App Styles */
 .App {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #F9FAFB; /* Light Gray */
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
@@ -10,19 +10,19 @@
 
 .app-header {
   text-align: center;
-  color: white;
+  color: #374151; /* Dark gray for contrast */
   margin-bottom: 40px;
 }
 
 .app-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  color: #1F2937; /* Darker gray for heading */
 }
 
 .app-header p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  color: #6B7280; /* Medium gray for subtitle */
 }
 
 .app-main {
@@ -35,13 +35,14 @@
 
 /* Upload Section */
 .upload-section {
-  background: white;
+  background: #FFFFFF; /* Soft White */
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
   margin-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid #E5E7EB;
 }
 
 /* Resume Upload Component */
@@ -66,13 +67,13 @@
 }
 
 .upload-area:hover {
-  border-color: #667eea;
-  background-color: #f8f9ff;
+  border-color: #3B82F6;
+  background-color: #F8FAFC; /* Cool Gray */
 }
 
 .upload-area.drag-active {
-  border-color: #667eea;
-  background-color: #f0f4ff;
+  border-color: #3B82F6;
+  background-color: #EFF6FF; /* Light Blue Tint */
   transform: scale(1.02);
 }
 
@@ -119,7 +120,7 @@
 }
 
 .analyze-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3B82F6; /* Blue */
   color: white;
   border: none;
   padding: 15px 30px;
@@ -132,8 +133,9 @@
 }
 
 .analyze-btn:hover:not(:disabled) {
+  background: #2563EB;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
 .analyze-btn:disabled {
@@ -174,16 +176,16 @@
 
 .job-description-textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .form-tips {
   margin-top: 15px;
   padding: 15px;
-  background: #f8f9ff;
+  background: #EFF6FF; /* Light Blue Tint */
   border-radius: 10px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #3B82F6;
 }
 
 .form-tips p {
@@ -204,12 +206,13 @@
 
 /* Analysis Results */
 .analysis-results {
-  background: white;
+  background: #FFFFFF; /* Soft White */
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid #E5E7EB;
 }
 
 .results-header {
@@ -246,9 +249,9 @@
 .result-section {
   margin-bottom: 40px;
   padding: 25px;
-  background: #f8f9fa;
+  background: #F8FAFC; /* Cool Gray */
   border-radius: 15px;
-  border-left: 5px solid #667eea;
+  border-left: 5px solid #3B82F6;
 }
 
 .result-section h3 {
@@ -356,7 +359,7 @@
 
 .metric-value {
   font-weight: bold;
-  color: #667eea;
+  color: #3B82F6;
   font-size: 1.1rem;
 }
 
@@ -411,11 +414,11 @@
 }
 
 .rewrite-suggestion {
-  background: #f8f9ff;
+  background: #EFF6FF; /* Light Blue Tint */
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #3B82F6;
   font-family: 'Courier New', monospace;
   font-size: 0.95rem;
   line-height: 1.5;
