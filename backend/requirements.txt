@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+pdfplumber
+python-docx
+openai
+spacy
+textstat 
