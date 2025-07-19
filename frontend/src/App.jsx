@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <h1>🤖 AI Resume Reviewer</h1>
+        <a href="/"><h1>🤖 AI Resume Reviewer</h1></a>
         <p>Upload your resume and get AI-powered feedback</p>
       </header>
 
