@@ -5,6 +5,7 @@ import textstat
 from typing import List, Tuple
 import openai
 import os
+from collections import Counter
 
 def extract_text_from_pdf(file_path: str) -> str:
     try:
@@ -32,7 +33,6 @@ def extract_keywords(text: str) -> List[str]:
     keywords = [word for word in words if word not in stop_words and len(word) > 2]
     
     # Return unique keywords with frequency
-    from collections import Counter
     keyword_freq = Counter(keywords)
     return [word for word, freq in keyword_freq.most_common(20)]
 
