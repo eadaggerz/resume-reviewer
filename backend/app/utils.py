@@ -166,7 +166,9 @@ def get_suggested_rewrites(resume_text: str, job_description: str = None) -> Lis
         3. Are more impactful
         4. Better match the job requirements
 
-        Format each suggestion as: "Original: [text] → Improved: [text]"
+        Only output the suggestions, no other text. 
+        
+        Use the following format and include the symbol →: "Original: [text] → Improved: [text]"
         """
         
         response = client.chat.completions.create(
