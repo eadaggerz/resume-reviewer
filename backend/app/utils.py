@@ -170,12 +170,11 @@ def get_suggested_rewrites(resume_text: str, job_description: str = None) -> Lis
         """
         
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are an expert resume writer. Provide specific, actionable rewrite suggestions."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=800,
             temperature=0.7
         )
         
