@@ -104,13 +104,19 @@ const ResumeUpload = ({ onAnalysis, loading }) => {
           )}
         </div>
 
-        <button 
-          type="submit" 
-          disabled={!selectedFile || loading}
-          className="analyze-btn"
-        >
-          {loading ? '🔄 Analyzing...' : '🔍 Analyze Resume'}
-        </button>
+        {loading ? (
+          <div className="spinner-container" style={{ marginTop: '1rem' }}>
+            <div className="spinner"></div>
+          </div>
+        ) : (
+          <button 
+            type="submit" 
+            disabled={!selectedFile}
+            className="analyze-btn"
+          >
+            🔍 Analyze Resume
+          </button>
+        )}
       </form>
     </div>
   )

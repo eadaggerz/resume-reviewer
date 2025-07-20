@@ -13,17 +13,14 @@ function App() {
   const handleAnalysis = async (formData) => {
     setLoading(true)
     setError(null)
-    
     try {
       const response = await fetch(getApiUrl(API_CONFIG.ENDPOINTS.ANALYZE_RESUME), {
         method: 'POST',
         body: formData,
       })
-      
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
       }
-      
       const data = await response.json()
       setAnalysisData(data)
     } catch (err) {
